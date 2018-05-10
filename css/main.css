@@ -1,0 +1,451 @@
+.header {
+	
+}
+
+.header__bottom {
+	position: relative;
+	padding-top: 8px;
+	padding-bottom: 7px;
+	background-color: #000;
+}
+
+.header__formCont {
+	display: none;
+}
+
+.header__form {
+	display: none;
+}
+.toggleMobMenu {
+	float: left;
+	width: 40px;
+	margin-top: 15px;
+}
+
+.toggleMobMenu span {
+	display: block;
+	height: 2px;
+	margin-bottom: 6px;
+	background-color: #fff;
+}
+
+.toggleMobMenu span:last-child {
+	margin-bottom: 0;
+}
+
+.logo {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	width: 117px;
+	height: 25px;
+	background: url("../images/logo.png");
+}
+
+.menuCont {
+	display: none;
+	position: absolute;
+	padding-top: 28px;
+	padding-bottom: 30px;
+	border-top: 1px solid rgba(255,255,255,.8);
+	top: 100%;
+	left: 0;
+	right: 0;
+	background-color: rgba(0,0,0,.8);
+	z-index: 2;
+}
+
+.menuCont.open {
+	display: block;
+}
+
+.delivery {
+	margin-right: 212px; 
+	display: inline-block;
+}
+
+.mailLink {
+	display: inline-block;
+	font-size: 14px;
+	color: #000;
+	text-decoration: none;
+	margin-top: 17px;
+}
+.mailLink:before {
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 12px;
+	content: "";
+	width: 21px;
+	height: 13px;
+	background: url("../images/mail.png");
+}
+
+.account {
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 33px;
+	font-size: 14px;
+	color: #000;
+	text-decoration: none;	
+}
+
+.account:before {
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 12px;
+	content: "";
+	width: 24px;
+	height: 9px;
+	background: url("../images/key.png");
+}
+
+.location {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.location__item {
+	display: inline-block;
+}
+
+.location__item a {
+	font-size: 14px;
+	color: #000;
+	text-decoration: none;
+}
+
+.location__item:after {
+	content:"|";
+	margin-left: 4px;
+}
+
+.location__item:last-child:after {
+	display: none;
+}
+
+.basket {
+	float: right;
+	color: #fff;
+	text-decoration: none;
+}
+
+.basket:after{
+	display: inline-block;
+	content: '';
+	width: 48px;
+    height: 49px;
+    margin-left: 2px;
+	background: url("../images/basket.png");
+}
+
+.menu__item a {
+	display: block;
+	padding: 20px 0;
+	color: #fff;
+	font-size: 18px;
+	text-transform: uppercase;
+	text-align: center;
+	text-decoration: none;
+}
+
+@media screen and (min-width: 480px) { 
+	.header__topRight {
+		float: right;
+	}
+	.mailLink {
+		float: left;
+		margin-bottom: 0;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.toggleMobMenu {
+		display: inline-block;
+	}
+	.logo {
+		position: static;
+		float: left;
+		margin-right: 17px;
+	}
+
+	.menuCont {
+		position: static;
+    	float: left;
+    	display: block;
+    	padding: 0;
+    	border-top: none;
+    }		
+
+    .menu__item {
+    	display: inline-block;
+    }
+    .menu__item a {
+    	font-size: 14px;
+    	padding: 0 17px;
+    }
+    .header__form {
+    	position: absolute;
+    	right: 0;
+    	top: 100%;
+    }
+
+    .header__form input[type="search"] {
+    	border: none;
+    	padding-right: 25px;
+    	border-bottom: 1px solid #000;
+    }
+    .header__form button {
+    	background: #000 url(../images/search.png);
+    	border: none;
+    	width: 23px;
+    	height: 23px;
+    	font-size: 0;
+    	position: absolute;
+    	bottom: 3px;
+    	right: 0;
+    }
+    .header__formCont {
+    	display: block;
+    	float: right;
+    }
+    .searchIcon {
+    	display: block;
+    	width: 23px;
+    	height: 23px;
+    	margin-right: 16px;
+    	background: url("../images/search.png");
+    }
+}
+
+@media screen and (max-width: 992px) {
+	.delivery {
+		float: left;
+		display: none;
+		margin-right: 55px;
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+	.logo {
+		position: static;
+		float: left;
+	}	
+
+	.image {
+		display: block;
+	}
+}
+
+@media screen and (max-width: 1200px) {
+	.delivery {
+		margin-right: 212px;
+	}
+	.header__formCont {
+		margin-right: 10px;
+	} 
+	.header__form {
+		display: block;
+		position: relative;
+	}
+	.header__form input[type="search"] {
+	    border: block;
+    	padding-right: 25px;
+    	border-bottom: 1px solid #fff;
+    	background-color: transparent;
+	}
+	.searchIcon {
+		display: none;
+	}
+	.listReset {
+		display: none;
+	}
+
+}
+
+.footer {
+	width: 100%;
+	background-color: #000;
+	font-size: 0;
+}
+
+.footer_container {
+	width: 1170px;
+	margin: auto;
+}
+
+.text {
+	font-size: 14px; 
+	color: #fff;
+	text-decoration: none;
+}
+
+.text:hover {
+	color: grey;
+}
+
+.ilya {
+	height: 444px;
+}
+
+.text2 {
+	color: #000;
+	font-size: 14px;
+}
+
+.column {
+	display: inline-block;
+	width: 25%;
+	margin-top: 10px; 
+}
+
+.column_Item {
+	margin-top: 5px; 
+}
+
+.btn {
+	color: #fff;
+	text-decoration: none;
+	border: 1px solid;
+	padding: 9px;
+	font-size: 14px;
+}
+
+.btn_space {
+	float: right;
+	margin: 40px;
+	vertical-align: top;
+	display: inline-block;
+}
+
+.btn:hover {
+	color: grey;
+}
+
+.footer_cp {
+	color: #fff
+}
+
+.footer_cp a {
+	color: #fff
+}
+
+.footer_Item {
+	font-size: 14px;
+	display: inline-block;
+	width: 33%;
+	margin: 20px 40px;
+
+}
+
+.triple {
+	vertical-align: top;
+}
+
+.middleBlock {
+	max-width:100%; 
+	min-width:400px;
+	margin: 0 auto;
+	padding: 0 15px;
+	font-size: 0;
+}
+
+.align {
+	width: 1170px;
+	margin: auto;
+	border-bottom: 1px solid grey;
+}
+
+.priceS {
+	font-size: 0;
+	width: 1170px;
+	margin: auto;
+}
+
+.price {
+	vertical-align: top;
+	display: inline-block;
+	width: 33.3%;
+	font-size: 14px;
+	text-align: center;
+	color: #000;
+}
+
+.h1 {
+	font-size: 30px;
+	text-align: center;
+}
+
+.buttn {
+	display: inline-block;
+	width: 50%;
+	margin-top: 20px;
+	height: auto;
+	vertical-align: top;
+}
+
+.bun {
+	text-align: center;
+	font-size: 0;
+	color: #fff; 
+	width: 100%;
+	margin: auto;
+	height: auto;
+}
+
+.btn2:hover {
+	background-color: grey;
+	color: #000;
+}
+
+.priceBlock {
+	width: 100%;
+	height: auto;
+}
+
+.image {
+	width: 50%;
+	display: inline-block;
+}
+
+.lowestBlock {
+	max-width:100%; 
+	min-width:400px;
+	margin: 0 auto;
+	padding: 0 15px;;
+}
+
+.a1 {
+	width: 100%;
+	border: 15px solid #fff;
+	vertical-align: top;
+}
+
+.container {
+	width: 1170px;
+	margin: auto;
+}
+
+.lowestImg {
+	width: 100%;
+	height: auto;
+	margin: 10px;
+}
+
+.sale {
+	width: 100%;
+	height: auto;
+}
+
+.btn2 {
+	display: inline-block;
+	margin: auto;
+	color: #fff;
+	text-decoration: none;
+	border: 1px solid;;
+	padding: 9px;
+	font-size: 25px;
+	margin-bottom: 25px;
+}
